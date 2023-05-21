@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Plants</string>
+
+    <string name="plant_name_1">Basil</string>
+    <string name="plant_name_2">Beets</string>
+    <string name="plant_name_3">Broccoli</string>
+    <string name="plant_name_4">Cantaloupe</string>
+    <string name="plant_name_5">Carrots</string>
+    <string name="plant_name_6">Celery</string>
+    <string name="plant_name_7">Chives</string>
+    <string name="plant_name_8">Cilantro</string>
+    <string name="plant_name_9">Cucumbers</string>
+    <string name="plant_name_10">Figs</string>
+    <string name="plant_name_11">Garlic</string>
+    <string name="plant_name_12">Grapes</string>
+    <string name="plant_name_13">Kale</string>
+    <string name="plant_name_14">Kiwi</string>
+    <string name="plant_name_15">Lavender</string>
+    <string name="plant_name_16">Lettuce</string>
+    <string name="plant_name_17">Lovage</string>
+    <string name="plant_name_18">Nasturtiums</string>
+    <string name="plant_name_19">Onions</string>
+    <string name="plant_name_20">Parsley</string>
+    <string name="plant_name_21">Parsnips</string>
+    <string name="plant_name_22">Peas</string>
+    <string name="plant_name_23">Potatoes</string>
+    <string name="plant_name_24">Radishes</string>
+    <string name="plant_name_25">Rhubarb</string>
+    <string name="plant_name_26">Spinach</string>
+    <string name="plant_name_27">Squash Spaghetti</string>
+    <string name="plant_name_28">Squash Winter</string>
+    <string name="plant_name_29">Swiss Chard</string>
+    <string name="plant_name_30">Thyme</string>
+    <string name="plant_name_31">Tomatoes</string>
+    <string name="plant_name_32">Vinca</string>
+    <string name="plant_name_33">Zucchini</string>
+
+    <string name="plant_summary_1">Annual herb in the mint family</string>
+    <string name="plant_summary_2">Root vegetable that is a member of the amaranth family</string>
+    <string name="plant_summary_3">Cruciferous vegetable related to cabbage and cauliflower</string>
+    <string name="plant_summary_4">Vine-like plant that produces a sweet melon</string>
+    <string name="plant_summary_5">Biennial plant in the umbellifer family Apiaceae</string>
+    <string name="plant_summary_6">Biennial plant in the Apiaceae family</string>
+    <string name="plant_summary_7">Perennial herb in the onion family </string>
+    <string name="plant_summary_8">Annual herb in the Apiaceae family</string>
+    <string name="plant_summary_9">Annual vine plant in the Cucurbitaceae family</string>
+    <string name="plant_summary_10">Small tree or shrub that produces edible figs</string>
+    <string name="plant_summary_11">Bulbous plant in the onion family</string>
+    <string name="plant_summary_12">Woody perennial vines that produce edible berries</string>
+    <string name="plant_summary_13">Leafy green vegetable in the cabbage family</string>
+    <string name="plant_summary_14">Vigorous, climbing vines that produce edible fruits</string>
+    <string name="plant_summary_15">Fragrant, drought-tolerant perennial herb</string>
+    <string name="plant_summary_16">Annual plant that is grown for its edible leaves</string>
+    <string name="plant_summary_17">Tall, perennial herb with a celery-like flavor</string>
+    <string name="plant_summary_18">Annual plant with edible leaves and flowers</string>
+    <string name="plant_summary_19">Biennial plant in the allium family</string>
+    <string name="plant_summary_20">Biennial herb with a strong, distinctive flavor</string>
+    <string name="plant_summary_21">Biennial root vegetable with a sweet, earthy flavor</string>
+    <string name="plant_summary_22">Annual legume that is grown for its edible pods and seeds</string>
+    <string name="plant_summary_23">Perennial nightshade</string>
+    <string name="plant_summary_24">Annual root vegetable</string>
+    <string name="plant_summary_25">Perennial plant with large, edible stalks </string>
+    <string name="plant_summary_26">Annual leafy green vegetable</string>
+    <string name="plant_summary_27">Annual vine that is grown for its edible fruit</string>
+    <string name="plant_summary_28">Annual vine that is grown for its edible fruit</string>
+    <string name="plant_summary_29">Annual leafy green vegetable</string>
+    <string name="plant_summary_30">Perennial herb with small, aromatic leaves</string>
+    <string name="plant_summary_31">Annual herbaceous plant that is grown for its edible fruits</string>
+    <string name="plant_summary_32">Perennial flowering plant</string>
+    <string name="plant_summary_33">Annual summer squash that is grown for its edible, cylindrical fruit</string>
+
+
+    <string name="plant_details_1">To plant basil outside, wait until the soil has warmed to at least 10°C -preferably around 21°C for best growth. </string>
+    <string name="plant_details_2">Plant in early spring in well cultivated soil. The soil should be well drained, deep, fertile and well supplied with organic matter.</string>
+    <string name="plant_details_3">Sow from fall to early spring in average soil. Keep evenly moist. Container friendly. One plant per 12 inch container.</string>
+    <string name="plant_details_4">Cantaloupes do best in well-draining soil that is a mix between loamy and sandy. Plant in a spot that gets full sun. </string>
+    <string name="plant_details_5">For best flavour, harvest when the root is no more than 2" in diameter. Rich loose soil is best with uniform moisture. Onions and carrots are good companions.
+</string>
+    <string name="plant_details_6">Start the seeds indoors 6 to 8 weeks before the last frost date in your area. Sow the seeds half an inch deep in a pot filled with moist potting mix.</string>
+    <string name="plant_details_7">Sow outside in full sun location after danger of frost. Keep evenly moist. Sow from fall (cover or put in greenhouse) to early spring. </string>
+    <string name="plant_details_8">Sow outside after danger of frost in early spring. Container friendly - 3 plants for each 12" pot.</string>
+    <string name="plant_details_9">Sow under cover (protected) from Mid spring, 3 or 4 seeds 1 inch deep in a 3 inch pot in good compost, and thin later to the best one or two plants per clump. Transplant no later than 3 weeks after seeding as cucumbers have a tap root that can be easily damaged. </string>
+    <string name="plant_details_10">Fig trees are dormant and look dead until late spring - early May when new buds arrive. You can check the tree is alive by pressing your nail into the bark of a branch. If the flesh underneath is green, the tree is alive.</string>
+    <string name="plant_details_11">https://gardenmadesimple.com/growing-store-bought-garlic</string>
+    <string name="plant_details_12">Sweet and seedless. this self pollinating variety produces sweet, medium sized grapes that turn yellow when ripe and can withstand cold winter temperatures. </string>
+    <string name="plant_details_13">Kale likes well-drained, fertile soil high in organic matter. This plant prefers plentiful, consistent moisture. </string>
+    <string name="plant_details_14">Actinidia Kiwi will grow in a variety of soils in sun or shade and is relatively fool proof.</string>
+    <string name="plant_details_15">Sow indoors 8–10 weeks before last anticipated spring frost. Keep moist. Container friendly - 3 plants for each 12" pot.  </string>
+    <string name="plant_details_16">Beets are a good companion for lettuce.</string>
+    <string name="plant_details_17">Lovage is an easy-to-grow, robust and hardy relative of celery and parsley. You can grow it from seed or buy young plants. It’s happy in most soil conditions, needs little maintenance and suffers few problems. Lovage plants are perennial, dying down in late autumn then re-sprouting from the base every spring.  </string>
+    <string name="plant_details_18">The plant is extremely vigorous and mounds up to 16 inches in height. Blooms come in a variety of colors including yellow, red, orange, mahogany, and rose. This is a bush habit,  non-trailing type that holds its blooms well above the attractive foliage. Blossoms are a spicy addition to a salad.
+</string>
+    <string name="plant_details_19">Carrots and Swiss Chard are good companions to onions. Try growing onions with mint to confuse and deter onion fly.</string>
+    <string name="plant_details_20">Sow outside in full sun location after danger of frost. Keep evenly moist. Sow from fall (cover or put in greenhouse) to early spring. Container friendly - 3 plants for each 12" pot.</string>
+    <string name="plant_details_21">Parsnips prefer a sunny spot with well-drained, deep, loose and composted soil. Avoid planting them in areas where water collects, as this can lead to root rot.</string>
+    <string name="plant_details_22">McKenzie Pea - container variety. Planted around 10 May. Sprouted in a few days under the cold frame. Place in a container.</string>
+    <string name="plant_details_23">Two days before planting, cut large potatoes into pieces ensuring each piece contains at least one eye. Allow the cut area to cure to prevent the potato from rotting in the ground. Smaller potatoes with one or more eyes can be planted whole.</string>
+    <string name="plant_details_24">Garden radishes are usually ready for harvest three to five weeks after planting. You can pull them any time they reach a usable size. </string>
+    <string name="plant_details_25">Rhubarb needs an open, sunny or partially shaded site, and rich, moist soil. It will grow well in a sunny, open site, on a wide range of soils, as long as it has been well-prepared with plenty of manure or compost.</string>
+    <string name="plant_details_26">Choose a sunny spot with well-drained soil. Spinach prefers full sun, but it can tolerate partial shade. The soil should be well-drained, moist and fertile.</string>
+    <string name="plant_details_27">Sow seeds 1" deep. Sow 3 seeds in each spot where you want a plant to grow, and thin to the strongest plant. Space summer squash 18 to 24" apart in rows 3 to 4 feet apart. Give winter squash and pumpkins even more room with a minimum of 3 to 4 feet apart in rows 4 to 6 feet apart.</string>
+    <string name="plant_details_28">Winter Squash: Fruit is ripe if your thumbnail doesn’t mark the skin and the stem is dry and brown. Cut the stem about 4cm (2″) from the fruit. Squash survive a light frost, but store better if harvested before frost.</string>
+    <string name="plant_details_29">Harvest outer leaves all season. Onions are good companions. </string>
+    <string name="plant_details_30">Mild flavored leaves can be used in teas and any recipe calling for thyme.
+Soft lilac flowers are nice in fresh bouquets. </string>
+    <string name="plant_details_31">Tomatoes need well-drained soil that is rich in organic matter. Amend the soil with compost or manure before planting. Tomatoes need regular watering, especially during dry weather.</string>
+    <string name="plant_details_32">Looking good through all seasons and growing in any aspect, It is a vigorous grower, yet not overly invasive. It is tough, fully hardy and evergreen with pretty blue flowers produced from Spring through to Autumn, once established it will need next to no attention. </string>
+    <string name="plant_details_33">Zucchini are summer squash. Pick them young! Zucchini vines are large and require plenty of growing room, but for those who have room, zucchini is cost-effective, because one plant can produce between 3 and 9 pounds of fruit. </string>
+
+    <string name="expand_button_content_description">See more or less information about a plant.</string>
+</resources>
