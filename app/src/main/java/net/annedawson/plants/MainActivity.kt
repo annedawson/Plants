@@ -94,7 +94,12 @@ fun PlantImage(@DrawableRes plantImage: Int, modifier: Modifier = Modifier) {
          * description allows accessibility services to skip this element during navigation.
          */
         contentDescription = null,
-        contentScale = ContentScale.Fit
+        //contentScale = ContentScale.Fit
+        contentScale = ContentScale.Crop
+        // try running with contentScale = ContentScale.Fit
+        // then contentScale = ContentScale.Crop
+        // to see how crop fits the image to the desired size
+
         // https://developer.android.com/jetpack/compose/graphics/images/customize
     )
 }
