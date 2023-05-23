@@ -11,6 +11,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
@@ -63,14 +64,20 @@ fun PlantsApp() {
 
 @Composable
 fun PlantItem(plant: Plant, modifier: Modifier = Modifier) {
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(8.dp)
-            .background(MaterialTheme.colors.surface) // paler green for list item
-    ) {
-        PlantImage(plant.imageResourceId)
-        PlantInformation(plant.name,plant.summary)
+    Card(
+        elevation = 4.dp,
+        modifier = modifier.padding(8.dp)
+    )  // card is a medium component in Shape.kt change to 16.dp
+    {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp)
+                .background(MaterialTheme.colors.surface) // paler green for list item
+        ) {
+            PlantImage(plant.imageResourceId)
+            PlantInformation(plant.name, plant.summary)
+        }
     }
 }
 
