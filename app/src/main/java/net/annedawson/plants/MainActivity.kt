@@ -64,13 +64,14 @@ fun PlantsApp() {
 
 @Composable
 fun PlantItem(plant: Plant, modifier: Modifier = Modifier) {
+    // Card is a surface that can contain a single composable.
     Card(
-        elevation = 4.dp,
+        elevation = 20.dp,
         modifier = modifier.padding(8.dp)
     )  // card is a medium component in Shape.kt change to 16.dp
     {
         Row(
-            modifier = Modifier
+            modifier = Modifier // a new instance of Modifier
                 .fillMaxWidth()
                 .padding(8.dp)
                 .background(MaterialTheme.colors.surface) // paler green for list item
@@ -124,13 +125,13 @@ fun PlantInformation(@StringRes plantName: Int, @StringRes plantSummary: Int,mod
     Column {
         Text(
             text = stringResource(plantName),
-            modifier = modifier.padding(top = 8.dp)
+            modifier = modifier.padding(top = 8.dp),
+            style = MaterialTheme.typography.h2
         )
         Text(
             text = stringResource(plantSummary),
             //color = MaterialTheme.colors.onSurface,  //Grey900 - almost black
-            style = MaterialTheme.typography.body2
+            style = MaterialTheme.typography.body1
         )
-
     }
 }
