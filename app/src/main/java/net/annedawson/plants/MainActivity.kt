@@ -16,6 +16,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -45,7 +46,7 @@ class MainActivity : ComponentActivity() {
 fun PlantsApp() {
     Scaffold(
         topBar = {
-            //PlantsTopAppBar()
+            PlantsTopAppBar()
         }
     ) {
         LazyColumn(
@@ -135,3 +136,25 @@ fun PlantInformation(@StringRes plantName: Int, @StringRes plantSummary: Int,mod
         )
     }
 }
+
+@Composable
+fun PlantsTopAppBar(modifier: Modifier = Modifier) {
+    Row(modifier = modifier
+        .fillMaxWidth()
+        .background(color = MaterialTheme.colors.primary),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Image(
+            modifier = Modifier
+                .size(64.dp)
+                .padding(8.dp),
+            painter = painterResource(R.drawable.beets),
+            contentDescription = null
+        )
+        Text(
+            text = stringResource(R.string.app_name),
+            style = MaterialTheme.typography.h1
+        )
+    }
+}
+
