@@ -6,16 +6,19 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
 import androidx.compose.foundation.background
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ExpandLess
+import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
@@ -65,21 +68,57 @@ fun PlantsApp() {
 
 @Composable
 fun PlantItem(plant: Plant, modifier: Modifier = Modifier) {
+    var expanded by remember { mutableStateOf(false) }
+    // expanded is the state which is being observed
+
     // Card is a surface that can contain a single composable.
     Card(
         elevation = 20.dp,
         modifier = modifier.padding(8.dp)
     )  // card is a medium component in Shape.kt change to 16.dp
     {
-        Row(
-            modifier = Modifier // a new instance of Modifier
-                .fillMaxWidth()
-                .padding(8.dp)
-                .background(MaterialTheme.colors.surface) // paler green for list item
+        // spring animate the whole column
+        Column(modifier = Modifier
+            .animateContentSize(
+                animationSpec = spring(
+                    dampingRatio = Spring.DampingRatioMediumBouncy,
+                    stiffness = Spring.StiffnessLow
+                )
+            )
         ) {
-            PlantImage(plant.imageResourceId)
-            PlantInformation(plant.name, plant.summary)
+            Row(
+                modifier = Modifier // a new instance of Modifier
+                    .fillMaxWidth()
+                    .padding(8.dp)
+                    .background(MaterialTheme.colors.surface) // paler green for list item
+            ) {
+                PlantImage(plant.imageResourceId)
+                PlantItemButton(
+                    expanded = expanded,
+                    onClick = { expanded = !expanded },
+                ) // if I put the Button code below PlantInformation,
+                // when it runs, the button is off screen - so not visible
+                PlantInformation(plant.name, plant.summary)
+            }
+            if (expanded) {
+                PlantDetails(plant.details)
+            }
         }
+    }
+}
+
+@Composable
+private fun PlantItemButton(
+    expanded: Boolean,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    IconButton(onClick = onClick) {
+        Icon(
+            imageVector = if (expanded) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
+            tint = MaterialTheme.colors.secondary,
+            contentDescription = stringResource(R.string.expand_button_content_description)
+        )
     }
 }
 
@@ -158,3 +197,19 @@ fun PlantsTopAppBar(modifier: Modifier = Modifier) {
     }
 }
 
+@Composable
+fun PlantDetails(@StringRes plantDetails: Int, modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier.padding(
+            start = 16.dp,
+            top = 8.dp,
+            bottom = 16.dp,
+            end = 16.dp
+        )
+    ) {
+         Text(
+            text = stringResource(plantDetails),
+            style = MaterialTheme.typography.body1
+        )
+    }
+}
